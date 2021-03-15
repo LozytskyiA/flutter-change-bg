@@ -32,7 +32,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   Color color = Colors.amber;
 
-  void _decrementCounter() {
+  void _changeBg() {
     setState(() {
       color = Color((math.Random().nextDouble() * 0xFFFFFF).toInt() << 0)
           .withOpacity(1.0);
@@ -48,7 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Center(
           child: MaterialButton(
-        onPressed: _decrementCounter,
+        onPressed: _changeBg,
         child: Text('Hey there'),
         color: Colors.amber,
       )),
